@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Making Devs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lN-bV-fXP">
+                                <rect key="frame" x="0.0" y="28" width="375" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <color key="textColor" red="0.047387414619999998" green="0.0" blue="0.54827475550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86k-ba-EIu">
+                                <rect key="frame" x="186" y="331" width="106" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-1g-kY0">
+                                <rect key="frame" x="76" y="334" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWU-GZ-8c4">
+                                <rect key="frame" x="83" y="379" width="209" height="30"/>
+                                <state key="normal" title="Formar Parte de Making Devs"/>
+                                <connections>
+                                    <action selector="developerAdding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qPb-3Y-1XY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="¡Holi!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQF-SG-eAn">
+                                <rect key="frame" x="0.0" y="417" width="375" height="168"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.51765681379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="BF6-jc-BBz">
+                                <rect key="frame" x="67" y="103" width="240" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="QHX-OY-PWY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94501207494166928" green="0.94850546554042103" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9lN-bV-fXP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0Ld-hF-ksk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OQF-SG-eAn" secondAttribute="bottom" constant="82" id="1FH-QY-bM3"/>
+                            <constraint firstItem="BF6-jc-BBz" firstAttribute="top" secondItem="9lN-bV-fXP" secondAttribute="bottom" constant="29" id="6Zd-uF-14P"/>
+                            <constraint firstItem="GWU-GZ-8c4" firstAttribute="centerX" secondItem="9lN-bV-fXP" secondAttribute="centerX" id="A2H-qH-hB9"/>
+                            <constraint firstItem="BF6-jc-BBz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="141" id="B6a-3p-osC"/>
+                            <constraint firstItem="GWU-GZ-8c4" firstAttribute="centerX" secondItem="OQF-SG-eAn" secondAttribute="centerX" id="F2w-aE-JfX"/>
+                            <constraint firstItem="GWU-GZ-8c4" firstAttribute="trailing" secondItem="86k-ba-EIu" secondAttribute="trailing" id="J62-F0-cmz"/>
+                            <constraint firstItem="CpF-1g-kY0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="KVw-Kw-k45"/>
+                            <constraint firstItem="OQF-SG-eAn" firstAttribute="top" secondItem="GWU-GZ-8c4" secondAttribute="bottom" constant="8" symbolic="YES" id="PCv-QH-nem"/>
+                            <constraint firstItem="86k-ba-EIu" firstAttribute="leading" secondItem="CpF-1g-kY0" secondAttribute="trailing" constant="32" id="QJU-Zn-mNr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OQF-SG-eAn" secondAttribute="trailing" constant="41" id="QqB-Zc-8Wx"/>
+                            <constraint firstItem="GWU-GZ-8c4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vwp-yZ-R1U"/>
+                            <constraint firstItem="GWU-GZ-8c4" firstAttribute="top" secondItem="86k-ba-EIu" secondAttribute="bottom" constant="18" id="WMe-a0-2yp"/>
+                            <constraint firstItem="GWU-GZ-8c4" firstAttribute="centerX" secondItem="BF6-jc-BBz" secondAttribute="centerX" id="fQa-qF-0yB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="86k-ba-EIu" secondAttribute="trailing" constant="76" id="faF-xO-k84"/>
+                            <constraint firstItem="CpF-1g-kY0" firstAttribute="baseline" secondItem="86k-ba-EIu" secondAttribute="baseline" id="iyO-sw-nmU"/>
+                            <constraint firstAttribute="bottom" secondItem="GWU-GZ-8c4" secondAttribute="bottom" constant="258" id="jto-3d-V4z"/>
+                            <constraint firstItem="GWU-GZ-8c4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="mlD-Wg-lNc"/>
+                            <constraint firstItem="9lN-bV-fXP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="whH-yH-Krx"/>
+                            <constraint firstItem="9lN-bV-fXP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xIx-ml-9R7"/>
+                            <constraint firstItem="BF6-jc-BBz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="ymQ-hL-5g5"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="developerGreetings" destination="OQF-SG-eAn" id="NzN-9N-cPs"/>
+                        <outlet property="developerName" destination="86k-ba-EIu" id="ggs-rY-y3v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567.5" y="132.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_bg.png" width="1203" height="1439"/>
+    </resources>
+</document>
